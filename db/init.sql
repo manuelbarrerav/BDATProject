@@ -1,6 +1,6 @@
-/* CREATE DATABASE BDAT_FE_simulations; */
+CREATE DATABASE IF NOT EXISTS BDAT_FE_simulations;
 
-use BDAT_FE_simulations;
+USE BDAT_FE_simulations;
 
 CREATE TABLE IF NOT EXISTS simulation (
   id INT NOT NULL AUTO_INCREMENT,
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS simulation (
 );
 
 
-/* INSERT INTO timesimtransisomat_first_step01(
+/* INSERT INTO timesimtransisomat_first_step01
     id, n_transmitter, n_receiver, distance, plate_thickness, porosity, result_step_01, p_status, time, image
   ) VALUES ('1', '2','2','5','2','1', 'TimeSimP2TransIsoW2M14.01.mat', 'Done', '00:00:20', NULL); */
 
@@ -39,3 +39,4 @@ FLUSH PRIVILEGES; */
 
 
 SELECT * FROM timesimtransisomat_first_step01;
+
